@@ -156,9 +156,5 @@ def team_colors(teamName)
 end
 
 def team_names
-  game_hash.map {|side, attributes| attributes[:team_name]}
-end
-
-def player_numbers(teamName)
-  
+  game_hash.map {|home_away, keys| keys[:team_name]}
 end
